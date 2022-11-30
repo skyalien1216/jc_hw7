@@ -1,0 +1,7 @@
+rootProject.name = 'jc_hw7'
+include 'src:main:db'
+findProject(':src:main:db')?.name = 'db'
+include 'src:db'
+findProject(':src:db')?.name = 'db'
+include 'db'
+

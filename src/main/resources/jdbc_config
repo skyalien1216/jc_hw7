@@ -1,0 +1,17 @@
+jdbcdriver=org.postgresql.Driver
+url=jdbc:postgresql://localhost/hw7_db
+username=postgres
+password=skyalien
+
+usertable=users
+usertablekey=id
+usertableuserfield=name
+usertablepasswordfield=password
+
+roletable=roles
+roletablekey=id
+roletablerolefield=role
+
+userroletable=user_roles
+userroletableuserkey=user_id
+userroletablerolekey=role_id

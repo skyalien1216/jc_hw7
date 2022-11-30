@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <title>index</title>
+    <style type="text/css">
+   * {
+    background: black;
+    color: white;
+   }
+
+   a{
+   color: blue;
+   }
+  </style>
+</head>
+<body>
+<h1>Руководство по использованию</h1>
+
+<p>
+    Перед работой с бд(просмотром и добавлением товаров) ее необходимо создать. В модуле db в пакете org.java_courses запустите класс Main. В этом же пакете в классе CREDS хранятся креды для подключения к бд
+</p>
+
+<p>
+    В файле ресурсов jdbc_config также необходимо настроить креды для нормальной работы логин сервиса
+</p>
+
+<p>
+    Чтобы просмотреть товары нужно перейти по url <a href="http://localhost:3466/products">http://localhost:3466/products</a>
+</p>
+<p>
+    Добавить товар можно например так <a href="http://localhost:3466/products/add?product=test&amount=12&organization=test01">http://localhost:3466/products/add?product=test&amount=12&organization=test01</a>
+</p>
+
+<h3>Пользователи:</h3>
+<p>
+    <b>Менеджер</b> - логин и пароль = <b>manager</b>
+</p>
+<p>
+    <b>Гость</b> - логин и пароль = <b>guest</b>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.eclipse.jetty', name: 'jetty-servlet', version: '11.0.9'
+    implementation group: 'org.eclipse.jetty', name: 'jetty-proxy', version: '11.0.9'
+
+    implementation(project(":db"))
+}
+
+test {
+    useJUnitPlatform()
+}
+
